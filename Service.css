@@ -1,0 +1,102 @@
+body{
+    background-color: white;
+    font-family:arial
+}
+nav{
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 20px auto
+    ;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+h1{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: 1000;
+}
+.subtitle {
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 10px;
+}
+
+.description {
+    /*text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;*/
+    
+    position: relative;
+    max-width: 600px;
+    line-height: 1.8;
+   
+}
+
+.BarberCut{
+    
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    /*
+    position: static;
+    margin-right: 100px auto;
+    max-width: 900px;
+    padding: 0 1rem;
+    */
+}
+
+.BarberCut img{
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+.section {
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.bg1 { background-color: #f7f7f7; color: #1c1c1c; }
+.bg2 { background-color: #f0e4d7; color: #1c1c1c; }
+.bg3 { background-color: #d6eaf8; color: #1c1c1c; }
+
+.Top {
+  min-height: 60vh;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
