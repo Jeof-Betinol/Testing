@@ -106,6 +106,46 @@ html, body { margin: 0; padding: 0; }
     text-align: center;
 }
 
+.image-gallery {
+  
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-item{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery-item img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-item p{
+    text-align: center;
+    font-weight: 500;
+    width: 200px;
+}
+
+.Haircut-name{
+    width: auto;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: black;
+
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .BarberCut{
