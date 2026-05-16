@@ -125,7 +125,7 @@
 }
 
 .home-hero {
-    background-image: url(Images/Home-Background.jpg);
+    background-image: url(images/Home-Background.jpg);
 }
 
 .logo {
@@ -152,7 +152,7 @@
 }
 
 .service-hero {
-    background-image: url(Images/Service-Background.jpg);
+    background-image: url(images/Service-Background.jpg);
 }
 
 .service-hero p {
@@ -203,7 +203,7 @@
 }
 
 .about-hero {
-    background-image: url(Images/About-Background.jpg);
+    background-image: url(images/About-Background.jpg);
 }
 
 .about-content {
@@ -224,7 +224,7 @@
 }
 
 .contact-hero {
-    background-image: url(Images/Contact-Background.jpg);
+    background-image: url(images/Contact-Background.jpg);
 }
 
 .contact-content {
