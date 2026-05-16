@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: clamp(15px, 5vw, 50px);
+    padding: 15px 20px;
+    background: black;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo-link {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar a {
+    color: white;
+    font-size: clamp(14px, 2vw, 18px);
+    text-decoration: none;
+}
+
+.navbar-logo {
+    max-height: 50px;
+    width: auto;
+    display: block;
+}
+
+.navbar a:hover {
+    color: #ccc;
+}
+
+.navbar a.active-page {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+    font-size: clamp(12px, 2vw, 14px);
+}
+
+.site-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #ccc;
+}
+
+.footer-address {
+    color: #ccc;
+    display: block;
+    margin-top: 5px;
+}
+
+.home-hero,
+.service-hero,
+.about-hero,
+.contact-hero {
+    position: relative;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-hero::before,
+.service-hero::before,
+.about-hero::before,
+.contact-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.70);
+}
+
+.home-hero h1,
+.service-hero h1,
+.about-hero h1,
+.contact-hero h1 {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-style: italic;
+    font-size: clamp(24px, 5vw, 40px);
+    max-width: 90%;
+}
+
+.about-content a, .contact-content a {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    color: black;
+}
+
+.about-content a:hover, .contact-content a:hover {
+    color: #ccc;
+}
+
+.home-hero {
+    background-image: url(Images/Home-Background.jpg);
+}
+
+.logo {
+    position: relative;
+    z-index: 1;
+    max-width: 25%;
+    height: auto;
+}
+
+.home-hero a {
+    position: relative;
+    z-index: 1;
+    margin-top: 15px;
+    padding: 10px 16px;
+    font-size: clamp(14px, 2vw, 16px);
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.home-hero a:hover {
+    color: #ccc;
+}
+
+.service-hero {
+    background-image: url(Images/Service-Background.jpg);
+}
+
+.service-hero p {
+    position: relative;
+    z-index: 1;
+    color: white;
+    margin-top: 15px;
+    padding: 10px 16px;
+}
+
+.service-content {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service-content h2 {
+    margin-top: 20px;
+    font-size: clamp(18px, 3vw, 24px);
+}
+
+.service-content p {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: clamp(14px, 2.5vw, 18px);
+    line-height: 1.6;
+}
+
+.price,
+.note {
+    font-weight: bold;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.photo-grid img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+}
+
+.about-hero {
+    background-image: url(Images/About-Background.jpg);
+}
+
+.about-content {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    margin-top: 20px;
+    font-size: clamp(18px, 3vw, 24px);
+}
+
+.about-content p {
+    margin-top: 10px;
+    font-size: clamp(14px, 2.5vw, 18px);
+    line-height: 1.6;
+}
+
+.contact-hero {
+    background-image: url(Images/Contact-Background.jpg);
+}
+
+.contact-content {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    margin-top: 20px;
+    font-size: clamp(18px, 3vw, 24px);
+}
+
+.contact-content p {
+    margin-top: 10px;
+    font-size: clamp(14px, 2.5vw, 18px);
+    line-height: 1.6;
+}  
+
+
+/* Button */
+.separator {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 15px;
+    text-align: center;
+}
+
+.separator a {
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.separator a:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
